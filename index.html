@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;600;800&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+  <script src="a1.js" defer></script>
+  <script src="a2.js" defer></script>
+  <script src="cefr-words.js" defer></script>
+  <script src="script.js" defer></script>
+  <script type="module" src="pb.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <nav class="navbar fixed-bottom bg-warning-subtle">
+    <div class="container-fluid px-4">
+      <div class="collapse w-100" id="collapseExample">
+        <div class="d-flex flex-row justify-content-center mb-2 mt-2">
+          <div id="level-button-group" class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="button" aria-pressed="true" value="a1">A1</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="button" aria-pressed="true" value="a2">A2</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="button" aria-pressed="true" value="b1">B1</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="button" aria-pressed="true" value="b2">B2</button>
+            <button type="button" class="btn btn-outline-secondary disabled" data-bs-toggle="button" aria-pressed="true" value="c1">C1</button>
+            <button type="button" class="btn btn-outline-secondary disabled" data-bs-toggle="button" aria-pressed="true" value="c2">C2</button>
+          </div>
+        </div>
+      </div>
+
+      <a class="navbar-brand" href="#">Fluent<b>Flow</b></a>
+      <button id="show-levels-toggle"class="btn btn-light disabled" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        CEFR levels
+      </button>
+    </div>
+
+  </nav>
+
+  <div id="main-wrapper" class="container p-3">
+
+    <form id="search-form" class="mb-2 mt-3">
+      <div id="search-bar-wrapper" class="d-flex flex-row justify-content-start align-items-baseline">
+        <input type="text" id="search-box" name="search-box" placeholder="What do you want to read about today?" class="form-control p-2 px-3 flex-fill border-2 border-end-0 border-dark rounded-0 rounded-start"><br>
+        <button type="button" id="search-button" class="btn btn-outline-dark border-dark mt-2 p-2 px-3 rounded-0 border-2 border-start-0 rounded-end">Search</button>
+      </div>
+    </form> 
+    
+    <div id="wiki-image-wrapper" class="d-flex flex-row justify-content-center align-content-center" style="max-height: 350px;">
+      <img id="wiki-image" src="" alt="Wikipedia article image" class="w-100 m-4">
+    </div>
+
+    <div id="output-text" class=""></div>
+
+    <button type="button" id="read-text-button" class="mt-2">Listen to the article</button>
+
+  </div>
+</body>
+</html>

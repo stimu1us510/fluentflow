@@ -1,0 +1,73 @@
+body{
+  background-color: darkgray;
+}
+
+#text-content{
+  color: black;
+}
+
+.highlighted{
+  /* color: green; */
+  background-color: yellow;
+}
+
+.highlight{
+  background-color: yellow;
+}
+
+/* .a1-highlight{
+  color: blueviolet;
+}
+
+.a2-highlight{
+  color: palegreen;
+} */
+
+.highlight-a1 {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.highlight-a2 {
+  color: orange;
+  cursor: pointer;
+}
+
+.highlight-b1 {
+  color: yellowgreen;
+  cursor: pointer;
+}
+
+#output-text{
+  line-height: 2.5rem;
+}
+
+#wiki-image{
+  width: auto;
+  object-fit: contain;
+}
+
+#main-wrapper{
+  margin-bottom: 125px;
+}
+
+#search-box:focus {
+  border-color: transparent;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0), 0 0 8px rgba(255, 0, 0, 0);
+}
+
+a.navbar-brand {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
